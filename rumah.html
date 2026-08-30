@@ -88,15 +88,19 @@ h2{font:500 clamp(30px,4.4vw,52px)/1.08 "Helvetica Neue",Helvetica,Arial,sans-se
 .tile:hover{transform:scale(1.02)}
 .gpanel{position:relative;overflow:hidden;min-height:100%;aspect-ratio:4/3;
   background:
-    linear-gradient(var(--ang),#9a9a9a22 0%,transparent 55%),
+    radial-gradient(120% 90% at 78% 18%,#9a9a9a66 0%,transparent 62%),
+    linear-gradient(var(--ang),#9a9a9a3d 0%,#9a9a9a14 46%,transparent 78%),
     linear-gradient(calc(var(--ang) + 90deg),#151515 0%,#0d0d0d 100%);
   border:1px solid #212121;display:flex;align-items:center;justify-content:center}
-.gpanel::after{content:'';position:absolute;inset:0;opacity:.55;
-  background:repeating-linear-gradient(var(--ang),transparent 0 13px,#212121 13px 14px)}
-.gmono{position:relative;z-index:1;font:500 clamp(56px,9vw,132px)/1 "Helvetica Neue",Helvetica,Arial,sans-serif;
-  color:#9a9a9a;opacity:.30;letter-spacing:-.03em;user-select:none}
-.glabel{position:absolute;left:20px;bottom:16px;z-index:2;font-size:11px;letter-spacing:.2em;
-  text-transform:uppercase;color:#909090}
+.gpanel::after{content:'';position:absolute;inset:0;opacity:.5;
+  background:repeating-linear-gradient(var(--ang),transparent 0 22px,#9a9a9a1f 22px 23px)}
+.gpanel::before{content:'';position:absolute;inset:14px;border:1px solid #9a9a9a33;
+  pointer-events:none}
+.gmono{position:relative;z-index:1;font:500 clamp(70px,11vw,180px)/1 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#9a9a9a;opacity:.72;letter-spacing:-.04em;user-select:none;
+  text-shadow:0 1px 0 #0d0d0d55}
+.glabel{position:absolute;left:22px;bottom:18px;z-index:2;font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;color:#9a9a9a;opacity:.9}
 .split-txt + .gpanel,.gpanel{min-height:260px}
 .hero.splitH .gpanel,.hero .gpanel{aspect-ratio:auto;height:100%;min-height:340px;border:0}
 .ed-pic + *,.hero.full.notpic{background:
