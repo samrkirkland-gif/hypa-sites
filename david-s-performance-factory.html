@@ -4,7 +4,7 @@
 <title>David&#x27;s Performance Factory — Dothan</title>
 <meta name="description" content="David&#x27;s Performance Factory in Dothan. Equipment that works. Space to use it.">
 <meta property="og:title" content="David&#x27;s Performance Factory"><meta property="og:description" content="Equipment that works. Space to use it.">
-<meta property="og:image" content="https://live.staticflickr.com/8271/29998877565_e8f0d0017c_b.jpg">
+<meta property="og:image" content="https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL2lzMTQzMTItaW1hZ2Uta3d2d3ZjdXQuanBn.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"David's Performance Factory","telephone":"+1-334-718-4234","address":{"@type":"PostalAddress","streetAddress":"","addressLocality":"Dothan"},"openingHours":null}</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -86,6 +86,22 @@ h2{font:500 clamp(30px,4.4vw,52px)/1.08 "Oswald","Helvetica Neue",Helvetica,sans
 .tile{aspect-ratio:4/3;background-size:cover;background-position:center;background-color:#131313;
       transition:transform .5s cubic-bezier(.16,1,.3,1)}
 .tile:hover{transform:scale(1.02)}
+.gpanel{position:relative;overflow:hidden;min-height:100%;aspect-ratio:4/3;
+  background:
+    linear-gradient(var(--ang),#d8ff3e22 0%,transparent 55%),
+    linear-gradient(calc(var(--ang) + 90deg),#131313 0%,#0b0b0b 100%);
+  border:1px solid #1f1f1f;display:flex;align-items:center;justify-content:center}
+.gpanel::after{content:'';position:absolute;inset:0;opacity:.55;
+  background:repeating-linear-gradient(var(--ang),transparent 0 13px,#1f1f1f 13px 14px)}
+.gmono{position:relative;z-index:1;font:500 clamp(56px,9vw,132px)/1 "Oswald","Helvetica Neue",Helvetica,sans-serif;
+  color:#d8ff3e;opacity:.30;letter-spacing:-.03em;user-select:none}
+.glabel{position:absolute;left:20px;bottom:16px;z-index:2;font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;color:#8c8c8c}
+.split-txt + .gpanel,.gpanel{min-height:260px}
+.hero.splitH .gpanel,.hero .gpanel{aspect-ratio:auto;height:100%;min-height:340px;border:0}
+.ed-pic + *,.hero.full.notpic{background:
+    linear-gradient(160deg,#d8ff3e1c 0%,transparent 60%),
+    linear-gradient(20deg,#131313 0%,#0b0b0b 100%)}
 .tile.empty{display:flex;align-items:center;justify-content:center;color:#8c8c8c;
             font-size:11px;letter-spacing:.18em;text-transform:uppercase;border:1px solid #1f1f1f}
 .imgnote{color:#8c8c8c;font-size:13.5px;line-height:1.65;max-width:64ch;margin-top:24px}
@@ -118,25 +134,26 @@ a:focus-visible{outline:2px solid #d8ff3e;outline-offset:3px}
   <a class="lnk" href="#visit">Visit</a><a class="lnk" href="#contact">Contact</a></div>
 </div></nav>
 
-<header class="hero full" style="background-image:url(https://live.staticflickr.com/8271/29998877565_e8f0d0017c_b.jpg)">
-          <div class="scrim"></div>
-          <div class="w hero-in">
+<header class="hero splitH">
+          <div class="hero-copy"><div class="hero-in">
             <div class="kicker">Training &middot; Dothan</div>
             <h1>David&#x27;s Performance Factory</h1>
             <p class="tag">Equipment that works. Space to use it.</p>
             <p class="lede">Coaching if you want it, and none of the lock-in contracts you have to fight your way out of.</p>
             <div class="cta-row"><a class="cta" href="#contact">Get in touch</a>
             <a class="cta ghost" href="tel:+13347184234">+1-334-718-4234</a></div>
-          </div></header>
+          </div></div>
+          <div class="hero-pic" style="background-image:url(https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL2lzMTQzMTItaW1hZ2Uta3d2d3ZjdXQuanBn.jpg)"></div>
+        </header>
 
 <section id="about" style="padding-bottom:0"><div class="w rv">
   <h2>The Floor</h2>
 </div></section>
 <div class="rv"><div class="split">
-              <div class="split-img" style="background-image:url(https://live.staticflickr.com/65535/48047036562_899591b807_b.jpg)"></div>
+              <div class="split-img" style="background-image:url(https://live.staticflickr.com/4863/45924351144_f499833214_b.jpg)"></div>
               <div class="split-txt"><h3>The Floor</h3><p>Enough of everything that you are not queuing for a rack. Maintained properly, because broken kit is a broken session.</p></div>
             </div><div class="split rev">
-              <div class="split-img" style="background-image:url(https://live.staticflickr.com/65535/51679667888_78d74705d7_b.jpg)"></div>
+              <div class="split-img" style="background-image:url(https://cdn.stocksnap.io/img-thumbs/960w/LNCLN1NE6K.jpg)"></div>
               <div class="split-txt"><h3>The Coaching</h3><p>For people who want to progress rather than just attend. Programmed, tracked, adjusted.</p></div>
             </div></div>
 
@@ -147,14 +164,12 @@ a:focus-visible{outline:2px solid #d8ff3e;outline-offset:3px}
   <p class="items-note rv">Current pricing on enquiry.</p>
 </div></section>
 
-<div class="band" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/d/d5/Mizuguchi_Building_2024-03-10.jpg)"><div class="quote"><p>Equipment that works. Space to use it.</p></div></div>
+<div class="band" style="background-image:url(https://live.staticflickr.com/8271/29998877565_e8f0d0017c_b.jpg)"><div class="quote"><p>Equipment that works. Space to use it.</p></div></div>
 
 <section><div class="w">
   <div class="rv"><h2>Gallery</h2></div>
-  <div class="tiles rv"><div class="tile" style="background-image:url(https://cdn.stocksnap.io/img-thumbs/960w/GAB4IVSO2F.jpg)"></div><div class="tile" style="background-image:url(https://live.staticflickr.com/65535/48594200421_98f4d6a69d_b.jpg)"></div><div class="tile" style="background-image:url(https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2ZsMTQzMTk5NDM3MjAtaW1hZ2UuanBn.jpg)"></div><div class="tile" style="background-image:url(https://live.staticflickr.com/7290/9733797464_55b1cec536_b.jpg)"></div></div>
-  <p class="imgnote rv">The photography here is indicative, chosen to suit the trade. Replacing it
-  with your own is part of the build &mdash; your room, your team, your work. If you have not had a
-  shoot done, establishing that look is something we do properly.</p>
+  <div class="tiles rv"><div class="tile" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/b/b2/Westminster_College_gym_interior_face_NW.jpg)"></div><div class="tile" style="background-image:url(https://live.staticflickr.com/65535/51679667888_78d74705d7_b.jpg)"></div><div class="tile" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/2/29/Westminster_College_gym_interior_face_E.jpg)"></div><div class="tile" style="background-image:url(https://live.staticflickr.com/65535/48594200421_98f4d6a69d_b.jpg)"></div></div>
+  <p class="imgnote rv">The photography here is indicative, chosen to suit the trade. Replacing it with your own is part of the build — your room, your team, your work. If you have not had a shoot done, establishing that look is something we do properly.</p>
 </div></section>
 
 <section id="visit"><div class="w">
