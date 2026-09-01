@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Little Steak Hut — Newport</title>
+<meta name="description" content="Little Steak Hut in Newport. Cooking worth sitting down for.">
+<meta property="og:title" content="Little Steak Hut"><meta property="og:description" content="Cooking worth sitting down for.">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/5e/Tornado_gamja_%28Seoul_street_food%29_tornado_potato.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Little Steak Hut","telephone":"+44 7599 058 067","address":{"@type":"PostalAddress","streetAddress":"","addressLocality":"Newport"},"openingHours":null}</script>
+<style>
+@font-face{font-family:'Playfair Display';src:url('/fonts/Playfair-Display-600.woff2') format('woff2');
+  font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/Cormorant-Garamond-600.woff2') format('woff2');
+  font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Oswald';src:url('/fonts/Oswald-500.woff2') format('woff2');
+  font-weight:100 900;font-style:normal;font-display:swap}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:#0d0b09;color:#f5efe6;font:400 16.5px/1.7 "Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.w{max-width:1180px;margin:0 auto;padding:0 30px}
+a{color:inherit}
+nav.top{position:fixed;top:0;left:0;right:0;z-index:50;padding:18px 0;
+        background:#0d0b09e6;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+        border-bottom:1px solid transparent;transition:border-color .3s,padding .3s}
+nav.top.solid{border-bottom-color:#241f19;padding:12px 0}
+nav.top .w{display:flex;justify-content:space-between;align-items:center;gap:18px}
+.logo{font:500 21px/1 "Playfair Display",Georgia,"Times New Roman",serif;letter-spacing:-.01em}
+nav.top a.lnk{color:#a08f7d;text-decoration:none;font-size:12px;letter-spacing:.16em;
+              text-transform:uppercase;margin-left:26px}
+nav.top a.lnk:hover{color:#f5efe6}
+@media(max-width:720px){nav.top a.lnk{margin-left:14px;font-size:10.5px;letter-spacing:.1em}}
+
+/* ── hero variants ── */
+.hero{position:relative}
+.hero-in{position:relative;z-index:2}
+.kicker{color:#a86f5a;font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;margin-bottom:24px}
+h1{font:500 clamp(44px,8.4vw,104px)/1.0 "Playfair Display",Georgia,"Times New Roman",serif;letter-spacing:-.035em;margin-bottom:22px;text-wrap:balance}
+.tag{font:400 clamp(19px,2.6vw,28px)/1.35 "Playfair Display",Georgia,"Times New Roman",serif;color:#f5efe6;margin-bottom:20px;max-width:22ch;letter-spacing:-.015em}
+.lede{color:#a08f7d;font-size:clamp(16px,1.8vw,18.5px);line-height:1.65;max-width:54ch}
+.hero.full{min-height:94vh;display:flex;align-items:flex-end;padding:150px 0 76px;
+           background-size:cover;background-position:center}
+.hero.full .scrim{position:absolute;inset:0;
+  background:linear-gradient(180deg,#0d0b09cc 0%,#0d0b0944 34%,#0d0b09dd 78%,#0d0b09 100%)}
+.hero.splitH{display:grid;grid-template-columns:1fr;min-height:88vh}
+@media(min-width:900px){.hero.splitH{grid-template-columns:1.05fr .95fr}}
+.hero.splitH .hero-copy{display:flex;align-items:center;padding:140px 30px 70px}
+.hero.splitH .hero-copy .hero-in{max-width:600px;margin-left:auto;margin-right:46px}
+@media(max-width:899px){.hero.splitH .hero-copy .hero-in{margin:0}}
+.hero.splitH .hero-pic{background-size:cover;background-position:center;min-height:56vh}
+.hero.editorial{padding:150px 0 0}
+.hero.editorial h1{max-width:16ch}
+.ed-pic{height:clamp(300px,52vh,560px);margin:44px 0 44px;background-size:cover;background-position:center}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.cta{display:inline-block;padding:17px 34px;background:#a86f5a;color:#0d0b09;
+     text-decoration:none;font-size:12.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+     transition:opacity .2s}
+.cta:hover{opacity:.85}
+.cta.ghost{background:transparent;color:#f5efe6;border:1px solid #241f19}
+.cta.ghost:hover{border-color:#a86f5a;opacity:1}
+
+section{padding:104px 0}
+h2{font:500 clamp(30px,4.4vw,52px)/1.08 "Playfair Display",Georgia,"Times New Roman",serif;letter-spacing:-.03em;margin-bottom:20px;text-wrap:balance}
+.sub{color:#a08f7d;max-width:56ch;margin-bottom:52px;font-size:16.5px}
+
+/* ── alternating split blocks ── */
+.split{display:grid;grid-template-columns:1fr;gap:0;align-items:stretch}
+@media(min-width:880px){.split{grid-template-columns:1fr 1fr}
+  .split.rev .split-img{order:2}}
+.split-img{min-height:clamp(280px,46vh,520px);background-size:cover;background-position:center;background-color:#141110}
+.split-txt{display:flex;flex-direction:column;justify-content:center;padding:clamp(38px,6vw,76px);background:#141110}
+.split-txt h3{font:500 clamp(23px,3vw,34px)/1.15 "Playfair Display",Georgia,"Times New Roman",serif;letter-spacing:-.025em;margin-bottom:16px}
+.split-txt p{color:#a08f7d;max-width:44ch}
+
+/* ── items / menu / services ── */
+.items{display:grid;gap:1px;background:#241f19;border:1px solid #241f19}
+@media(min-width:760px){.items{grid-template-columns:repeat(2,1fr)}}
+.item{background:#0d0b09;padding:34px 30px}
+.item h4{font:500 20px/1.3 "Playfair Display",Georgia,"Times New Roman",serif;letter-spacing:-.02em;margin-bottom:8px}
+.item p{color:#a08f7d;font-size:15px}
+.items-note{color:#a08f7d;font-size:14px;margin-top:22px}
+
+/* ── full-bleed band ── */
+.band{height:clamp(280px,54vh,600px);background-size:cover;background-position:center;
+      background-attachment:scroll;position:relative}
+.band .quote{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+             background:#0d0b0977;padding:30px}
+.band .quote p{font:500 clamp(22px,3.6vw,44px)/1.2 "Playfair Display",Georgia,"Times New Roman",serif;color:#fff;text-align:center;
+               max-width:20ch;letter-spacing:-.03em;text-shadow:0 2px 30px rgba(0,0,0,.5)}
+
+/* ── gallery ── */
+.tiles{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.tile{aspect-ratio:4/3;background-size:cover;background-position:center;background-color:#141110;
+      transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.tile:hover{transform:scale(1.02)}
+.gpanel{position:relative;overflow:hidden;min-height:100%;aspect-ratio:4/3;
+  background:
+    radial-gradient(120% 90% at 78% 18%,#a86f5a66 0%,transparent 62%),
+    linear-gradient(var(--ang),#a86f5a3d 0%,#a86f5a14 46%,transparent 78%),
+    linear-gradient(calc(var(--ang) + 90deg),#141110 0%,#0d0b09 100%);
+  border:1px solid #241f19;display:flex;align-items:center;justify-content:center}
+.gpanel::after{content:'';position:absolute;inset:0;opacity:.5;
+  background:repeating-linear-gradient(var(--ang),transparent 0 22px,#a86f5a1f 22px 23px)}
+.gpanel::before{content:'';position:absolute;inset:14px;border:1px solid #a86f5a33;
+  pointer-events:none}
+.gmono{position:relative;z-index:1;font:500 clamp(70px,11vw,180px)/1 "Playfair Display",Georgia,"Times New Roman",serif;
+  color:#a86f5a;opacity:.72;letter-spacing:-.04em;user-select:none;
+  text-shadow:0 1px 0 #0d0b0955}
+.glabel{position:absolute;left:22px;bottom:18px;z-index:2;font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;color:#a86f5a;opacity:.9}
+.split-txt + .gpanel,.gpanel{min-height:260px}
+.hero.splitH .gpanel,.hero .gpanel{aspect-ratio:auto;height:100%;min-height:340px;border:0}
+.ed-pic + *,.hero.full.notpic{background:
+    linear-gradient(160deg,#a86f5a1c 0%,transparent 60%),
+    linear-gradient(20deg,#141110 0%,#0d0b09 100%)}
+.tile.empty{display:flex;align-items:center;justify-content:center;color:#a08f7d;
+            font-size:11px;letter-spacing:.18em;text-transform:uppercase;border:1px solid #241f19}
+.imgnote{color:#a08f7d;font-size:13.5px;line-height:1.65;max-width:64ch;margin-top:24px}
+
+/* ── facts + form ── */
+.facts{display:grid;gap:1px;background:#241f19;border:1px solid #241f19}
+@media(min-width:760px){.facts{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}}
+.fact{background:#0d0b09;padding:34px 30px}
+.fact span{display:block;color:#a86f5a;font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px}
+.fact b{font-weight:400;font-size:17.5px;line-height:1.5}
+.fact a{text-decoration:none;border-bottom:1px solid #241f19}
+form{display:grid;gap:16px;max-width:560px}
+label{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#a08f7d;display:block;margin-bottom:7px}
+input,textarea{background:#141110;border:1px solid #241f19;color:#f5efe6;
+               padding:15px 16px;font:inherit;font-size:15.5px;width:100%}
+input:focus,textarea:focus{outline:2px solid #a86f5a;outline-offset:1px}
+button{background:#a86f5a;color:#0d0b09;border:0;padding:17px 34px;font:inherit;font-size:12.5px;
+       font-weight:500;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;justify-self:start}
+footer{padding:56px 0 76px;border-top:1px solid #241f19;color:#a08f7d;font-size:14px}
+a:focus-visible{outline:2px solid #a86f5a;outline-offset:3px}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}
+  .rv{opacity:1!important;transform:none!important}}
+</style></head><body>
+
+<nav class="top" id="nav"><div class="w">
+  <div class="logo">Little Steak Hut</div>
+  <div><a class="lnk" href="#about">About</a><a class="lnk" href="#menu">The Menu</a>
+  <a class="lnk" href="#visit">Visit</a><a class="lnk" href="#contact">Contact</a></div>
+</div></nav>
+
+<header class="hero editorial">
+          <div class="w hero-in">
+            <div class="kicker">Kitchen &amp; Table &middot; Newport</div>
+            <h1>Little Steak Hut</h1>
+            <p class="tag">Cooking worth sitting down for.</p>
+          </div>
+          <div class="ed-pic" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/5/5e/Tornado_gamja_%28Seoul_street_food%29_tornado_potato.jpg)"></div>
+          <div class="w"><p class="lede">Seasonal plates, a room built for long dinners, and a kitchen that changes the menu when the produce changes.</p>
+            <div class="cta-row"><a class="cta" href="#contact">Get in touch</a>
+            <a class="cta ghost" href="tel:+447599058067">+44 7599 058 067</a></div>
+          </div></header>
+
+<section id="about" style="padding-bottom:0"><div class="w rv">
+  <h2>The Room</h2>
+</div></section>
+<div class="rv"><div class="split">
+              <div class="split-img" style="background-image:url(https://live.staticflickr.com/1481/25039204229_f5d0b6c857_b.jpg)"></div>
+              <div class="split-txt"><h3>The Room</h3><p>Comfortable enough for a Tuesday, dressed enough for an anniversary. Booths for a table of two, a long table for a crowd.</p></div>
+            </div><div class="split rev">
+              <div class="split-img" style="background-image:url(https://live.staticflickr.com/29/51712313_7eaf99af66_b.jpg)"></div>
+              <div class="split-txt"><h3>The Kitchen</h3><p>Everything made to order. Nothing sitting under a lamp. If it is on the menu today it is because it was good enough today.</p></div>
+            </div></div>
+
+<section id="menu"><div class="w">
+  <div class="rv"><h2>The Menu</h2>
+  <p class="sub">Seasonal plates, a room built for long dinners, and a kitchen that changes the menu when the produce changes.</p></div>
+  <div class="items rv"><div class="item"><h4>Antipasti</h4><p>To start, meant for sharing</p></div><div class="item"><h4>Primi</h4><p>Handmade pasta, daily</p></div><div class="item"><h4>Secondi</h4><p>From the grill and the oven</p></div><div class="item"><h4>Dolci</h4><p>Made in house</p></div></div>
+  <p class="items-note rv">Full menu at the door or on request.</p>
+</div></section>
+
+<div class="band" style="background-image:url(https://live.staticflickr.com/5328/17990324821_3680e29f67_b.jpg)"><div class="quote"><p>Cooking worth sitting down for.</p></div></div>
+
+<section><div class="w"><div class="rv"><h2>Gallery</h2></div><div class="tiles rv"><div class="tile" style="background-image:url(https://live.staticflickr.com/65535/50191012291_2e3324018c_b.jpg)"></div><div class="tile" style="background-image:url(https://live.staticflickr.com/1/710880_bbaf68ea8f_b.jpg)"></div><div class="tile" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/1/10/8097SM_Hypermarket_Street_Food_Festival_39.jpg)"></div><div class="tile" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/8/85/Durian_Ice_Cream_Burger.JPG)"></div></div><p class="imgnote rv">The photography here is indicative, chosen to suit the trade. Replacing it with your own is part of the build — your room, your team, your work. If you have not had a shoot done, establishing that look is something we do properly.</p></div></section>
+
+<section id="visit"><div class="w">
+  <div class="rv"><h2>Visit</h2></div>
+  <div class="facts rv"><div class="fact"><span>Find us</span><b>Newport</b></div><div class="fact"><span>Call</span><b><a href="tel:+447599058067">+44 7599 058 067</a></b></div></div>
+</div></section>
+
+<section id="contact"><div class="w">
+  <div class="rv"><h2>Get in touch</h2>
+  <p class="sub">Send a message and we will come back to you.</p></div>
+  <form class="rv" onsubmit="return sendMsg(this)">
+    <div><label for="n">Name</label><input id="n" required></div>
+    <div><label for="e">Email</label><input id="e" type="email" required></div>
+    <div><label for="m">Message</label><textarea id="m" rows="4" required></textarea></div>
+    <button type="submit">Send</button>
+  </form>
+</div></section>
+
+<footer><div class="w">
+  <p>&copy; Little Steak Hut &middot; Newport &middot; +44 7599 058 067</p>
+</div></footer>
+
+<script>
+function sendMsg(f){
+  // Composes a real message to the business. The previous version threw the
+  // enquiry away and told the visitor it had been sent.
+  const to = "littlesteakhut@gmail.com";
+  const n = f.querySelector('#n').value.trim();
+  const e = f.querySelector('#e').value.trim();
+  const m = f.querySelector('#m').value.trim();
+  if(!n || !e || !m) return false;
+  const subject = encodeURIComponent('Website enquiry from ' + n);
+  const body = encodeURIComponent(m) + '%0A%0A' + encodeURIComponent(n)
+                + '%0A' + encodeURIComponent(e);
+  if(to){
+    window.location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
+    f.querySelector('button').textContent = 'Opening your email app';
+  } else {
+    f.querySelector('button').textContent = 'Please call us instead';
+  }
+  return false;
+}
+(() => {
+  const n = document.getElementById('nav');
+  addEventListener('scroll', () => n.classList.toggle('solid', scrollY > 40), {passive:true});
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.rv').forEach(e => e.classList.add('in')); return; }
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }),
+    {threshold:.1, rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv').forEach(e => io.observe(e));
+})();
+</script>
+</body></html>
