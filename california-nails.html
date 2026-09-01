@@ -1,12 +1,19 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>California Nails — Derby</title>
-<meta name="description" content="California Nails in Derby. Nails that last past the weekend.">
+<title>California Nails — Abilene</title>
+<meta name="description" content="California Nails in Abilene. Nails that last past the weekend.">
 <meta property="og:title" content="California Nails"><meta property="og:description" content="Nails that last past the weekend.">
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"California Nails","telephone":"+447308185378","address":{"@type":"PostalAddress","streetAddress":"","addressLocality":"Derby"},"openingHours":null}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"California Nails","telephone":"+13256920187","address":{"@type":"PostalAddress","streetAddress":"","addressLocality":"Abilene"},"openingHours":null}</script>
 <style>
+@font-face{font-family:'Playfair Display';src:url('/fonts/Playfair-Display-600.woff2') format('woff2');
+  font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/Cormorant-Garamond-600.woff2') format('woff2');
+  font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Oswald';src:url('/fonts/Oswald-500.woff2') format('woff2');
+  font-weight:100 900;font-style:normal;font-display:swap}
+
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{background:#fffafb;color:#1d1418;font:400 16.5px/1.7 "Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
@@ -140,14 +147,14 @@ a:focus-visible{outline:2px solid #a85a4a;outline-offset:3px}
 
 <header class="hero editorial">
           <div class="w hero-in">
-            <div class="kicker">Nails &amp; Hands &middot; Derby</div>
+            <div class="kicker">Nails &amp; Hands &middot; Abilene</div>
             <h1>California Nails</h1>
             <p class="tag">Nails that last past the weekend.</p>
           </div>
           <div class="gpanel" style="--ang:145deg"><span class="gmono">CN</span><span class="glabel">Nails &amp; Hands</span></div>
           <div class="w"><p class="lede">Careful prep, clean lines, and finishes that hold. Booked properly so you are not waiting and not rushed.</p>
             <div class="cta-row"><a class="cta" href="#contact">Get in touch</a>
-            <a class="cta ghost" href="tel:+447308185378">+447308185378</a></div>
+            <a class="cta ghost" href="tel:+13256920187">+13256920187</a></div>
           </div></header>
 
 <section id="about" style="padding-bottom:0"><div class="w rv">
@@ -178,13 +185,13 @@ a:focus-visible{outline:2px solid #a85a4a;outline-offset:3px}
 
 <section id="visit"><div class="w">
   <div class="rv"><h2>Visit</h2></div>
-  <div class="facts rv"><div class="fact"><span>Find us</span><b>Derby</b></div><div class="fact"><span>Call</span><b><a href="tel:+447308185378">+447308185378</a></b></div></div>
+  <div class="facts rv"><div class="fact"><span>Find us</span><b>Abilene</b></div><div class="fact"><span>Call</span><b><a href="tel:+13256920187">+13256920187</a></b></div></div>
 </div></section>
 
 <section id="contact"><div class="w">
   <div class="rv"><h2>Get in touch</h2>
   <p class="sub">Send a message and we will come back to you.</p></div>
-  <form class="rv" onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks, we will reply shortly'">
+  <form class="rv" onsubmit="return sendMsg(this)">
     <div><label for="n">Name</label><input id="n" required></div>
     <div><label for="e">Email</label><input id="e" type="email" required></div>
     <div><label for="m">Message</label><textarea id="m" rows="4" required></textarea></div>
@@ -193,10 +200,31 @@ a:focus-visible{outline:2px solid #a85a4a;outline-offset:3px}
 </div></section>
 
 <footer><div class="w">
-  <p>&copy; California Nails &middot; Derby &middot; +447308185378</p>
+  <p>&copy; California Nails &middot; Abilene &middot; +13256920187</p>
 </div></footer>
 
 <script>
+function sendMsg(f){
+  // Composes a real message to the business. The previous version threw the
+  // enquiry away and told the visitor it had been sent.
+  const to = "abcalinails@gmail.com";
+  const n = f.querySelector('#n').value.trim();
+  const e = f.querySelector('#e').value.trim();
+  const m = f.querySelector('#m').value.trim();
+  if(!n || !e || !m) return false;
+  const subject = encodeURIComponent('Website enquiry from ' + n);
+  const body = encodeURIComponent(m + '
+
+' + n + '
+' + e);
+  if(to){
+    window.location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
+    f.querySelector('button').textContent = 'Opening your email app';
+  } else {
+    f.querySelector('button').textContent = 'Please call us instead';
+  }
+  return false;
+}
 (() => {
   const n = document.getElementById('nav');
   addEventListener('scroll', () => n.classList.toggle('solid', scrollY > 40), {passive:true});

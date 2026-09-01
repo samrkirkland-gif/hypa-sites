@@ -7,6 +7,13 @@
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"A splash of polish","telephone":"+447359919646","address":{"@type":"PostalAddress","streetAddress":"","addressLocality":"Bolton"},"openingHours":null}</script>
 <style>
+@font-face{font-family:'Playfair Display';src:url('/fonts/Playfair-Display-600.woff2') format('woff2');
+  font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/Cormorant-Garamond-600.woff2') format('woff2');
+  font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Oswald';src:url('/fonts/Oswald-500.woff2') format('woff2');
+  font-weight:100 900;font-style:normal;font-display:swap}
+
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{background:#fffafb;color:#1d1418;font:400 16.5px/1.7 "Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
@@ -184,7 +191,7 @@ a:focus-visible{outline:2px solid #8d6a9f;outline-offset:3px}
 <section id="contact"><div class="w">
   <div class="rv"><h2>Get in touch</h2>
   <p class="sub">Send a message and we will come back to you.</p></div>
-  <form class="rv" onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks, we will reply shortly'">
+  <form class="rv" onsubmit="return sendMsg(this)">
     <div><label for="n">Name</label><input id="n" required></div>
     <div><label for="e">Email</label><input id="e" type="email" required></div>
     <div><label for="m">Message</label><textarea id="m" rows="4" required></textarea></div>
@@ -197,6 +204,27 @@ a:focus-visible{outline:2px solid #8d6a9f;outline-offset:3px}
 </div></footer>
 
 <script>
+function sendMsg(f){
+  // Composes a real message to the business. The previous version threw the
+  // enquiry away and told the visitor it had been sent.
+  const to = "asplashofpolish@gmail.com";
+  const n = f.querySelector('#n').value.trim();
+  const e = f.querySelector('#e').value.trim();
+  const m = f.querySelector('#m').value.trim();
+  if(!n || !e || !m) return false;
+  const subject = encodeURIComponent('Website enquiry from ' + n);
+  const body = encodeURIComponent(m + '
+
+' + n + '
+' + e);
+  if(to){
+    window.location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
+    f.querySelector('button').textContent = 'Opening your email app';
+  } else {
+    f.querySelector('button').textContent = 'Please call us instead';
+  }
+  return false;
+}
 (() => {
   const n = document.getElementById('nav');
   addEventListener('scroll', () => n.classList.toggle('solid', scrollY > 40), {passive:true});
