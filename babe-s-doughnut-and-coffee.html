@@ -119,7 +119,7 @@ h2{font:500 clamp(30px,4.4vw,52px)/1.08 "Playfair Display",Georgia,serif;letter-
 
 /* ── facts + form ── */
 .facts{display:grid;gap:1px;background:#e6ddd0;border:1px solid #e6ddd0}
-@media(min-width:760px){.facts{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:760px){.facts{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}}
 .fact{background:#faf7f2;padding:34px 30px}
 .fact span{display:block;color:#8a5a2b;font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px}
 .fact b{font-weight:400;font-size:17.5px;line-height:1.5}
@@ -177,11 +177,7 @@ a:focus-visible{outline:2px solid #8a5a2b;outline-offset:3px}
 
 <div class="band" style="background-image:url(https://live.staticflickr.com/65535/48307623361_8c29fbc644_b.jpg)"><div class="quote"><p>Properly made coffee. Food worth stopping for.</p></div></div>
 
-<section><div class="w">
-  <div class="rv"><h2>Gallery</h2></div>
-  <div class="tiles rv"><div class="tile" style="background-image:url(https://live.staticflickr.com/65535/46901632294_003afa2993_b.jpg)"></div><div class="tile" style="background-image:url(https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L3Vwd2s2MTcwOTE2NC13aWtpbWVkaWEtaW1hZ2Uta293cXprcGEuanBn.jpg)"></div><div class="tile" style="background-image:url(https://live.staticflickr.com/65535/52136128556_99bf2c04db_b.jpg)"></div><div class="tile" style="background-image:url(https://pd.w.org/2026/06/5386a305663ca3502.07887809-2048x1542.jpg)"></div></div>
-  <p class="imgnote rv">The photography here is indicative, chosen to suit the trade. Replacing it with your own is part of the build — your room, your team, your work. If you have not had a shoot done, establishing that look is something we do properly.</p>
-</div></section>
+<section><div class="w"><div class="rv"><h2>Gallery</h2></div><div class="tiles rv"><div class="tile" style="background-image:url(https://live.staticflickr.com/65535/46901632294_003afa2993_b.jpg)"></div><div class="tile" style="background-image:url(https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L3Vwd2s2MTcwOTE2NC13aWtpbWVkaWEtaW1hZ2Uta293cXprcGEuanBn.jpg)"></div><div class="tile" style="background-image:url(https://live.staticflickr.com/65535/52136128556_99bf2c04db_b.jpg)"></div><div class="tile" style="background-image:url(https://pd.w.org/2026/06/5386a305663ca3502.07887809-2048x1542.jpg)"></div></div><p class="imgnote rv">The photography here is indicative, chosen to suit the trade. Replacing it with your own is part of the build — your room, your team, your work. If you have not had a shoot done, establishing that look is something we do properly.</p></div></section>
 
 <section id="visit"><div class="w">
   <div class="rv"><h2>Visit</h2></div>
