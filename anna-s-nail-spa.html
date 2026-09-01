@@ -213,10 +213,8 @@ function sendMsg(f){
   const m = f.querySelector('#m').value.trim();
   if(!n || !e || !m) return false;
   const subject = encodeURIComponent('Website enquiry from ' + n);
-  const body = encodeURIComponent(m + '
-
-' + n + '
-' + e);
+  const body = encodeURIComponent(m) + '%0A%0A' + encodeURIComponent(n)
+                + '%0A' + encodeURIComponent(e);
   if(to){
     window.location.href = 'mailto:' + to + '?subject=' + subject + '&body=' + body;
     f.querySelector('button').textContent = 'Opening your email app';
